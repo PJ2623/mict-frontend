@@ -1,6 +1,6 @@
 # MICT HACKATHON FRONTEND
 
-This a simple frontend that communicates with the api created for the MICT-HACKATHON
+This is a simple frontend that communicates with the api created for the MICT-HACKATHON
 
 ## Features
 - Users may access the chatbot to query about Namibian policies
