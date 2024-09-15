@@ -1,0 +1,203 @@
+.App {
+  display: flex;
+  flex: 1;
+  height: 80em;
+  justify-content: center;
+  align-items: center;
+  margin-left: 140%;
+}
+
+.App-Create-Post {
+  display: flex;
+  flex: 1;
+}
+
+.App-Login {
+  display: flex;
+  flex: 1;
+  margin-left: 90%;
+}
+
+fieldset {
+  display: flex;
+  width: 480px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+sup {
+  color: red;
+  top: -2px;
+  font-size: 95%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+input,
+select {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  height: 32px;
+  padding: 0 8px;
+}
+
+.Field {
+  position: relative;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.FieldError {
+  position: absolute;
+  bottom: -6px;
+  color: red;
+  font-size: 12px;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  padding: 12px;
+  width: 240px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: darkblue;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: red;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 16px 16px;
+  height: 150vh;
+  width: 50vw;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a top bar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.chatBotInputArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 165%;
+  margin: 0;
+}
+
+.chatBotResponseArea {
+  display: flex;
+  flex-direction: column;
+  width: 161.8%;
+  margin-bottom: 2px;
+  height: 50%;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.chatBotInputArea input {
+  width: 85%;
+  padding: 3px;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.p-d-container {
+  padding: 2px 16px;
+}
+
+.cardContainer {
+  display: flex;
+  width: 90vw;
+  padding-left: 10%;
+}
+
+.postCommentInputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#d-comment-btn {
+  width: 100%;
+}
